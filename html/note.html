@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Note</title>
+    <link rel="stylesheet" href="../css/note-style.css" />
+    <style>
+      html {
+        font-size: 16px;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        line-height: 1.6;
+      }
+      pre {
+        background-color: #f4f4f4;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 10px;
+        overflow-x: auto;
+      }
+      code {
+        font-size: 1.2em;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Note</h1>
+    <section>
+      <h2>Tác dụng thẻ meta viewport</h2>
+      <pre>
+        <code>
+          &lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;
+        </code>
+      </pre>
+      <p>
+        Hiển thị nội dung trên toàn bộ khung nhìn hiện tại, bình thường trên các
+        thiết bị có màn hình nhỏ thì chữ cũng bị thu nhỏ theo <br />nên thuộc
+        tính này giúp chữ giữ nguyên kích thước ban đầu, chỉ bị đẩy xuống dòng
+        khi chạm lề màn hình.
+      </p>
+    </section>
+    <section>
+      <h2>Sử dụng các file css khác nhau với các kích cỡ màn hình khác nhau</h2>
+      <pre>
+    <code>
+      &lt;link rel="stylesheet" media="screen and (max-width: 600px)" href="small.css" /&gt;
+      &lt;link rel="stylesheet" media="screen and (min-width: 601px) and (max-width: 1024px)" href="medium.css" /&gt;
+      &lt;link rel="stylesheet" media="screen and (min-width: 1025px)" href="large.css" /&gt;
+    </code>
+  </pre>
+    </section>
+    <section>
+      <h2>polyfill</h2>
+      <pre>
+    <code>
+      &lt;!--[if lt IE 10]&gt;
+      &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js&quot;&gt;&lt;/script&gt;
+      &lt;![endif]--&gt;
+    </code>
+  </pre>
+
+      <p>Để có thể hiển thị trên những trình duyệt cổ như IE < 10</p>
+    </section>
+
+    <section>
+      <h2>Media querry trên các kích thước màn hình</h2>
+      <pre> <code>
+        /* Thiết bị rất nhỏ (điện thoại, 739px trở xuống) */
+        @media only screen and (max-width: 46.1875rem) {
+        }
+
+        /* Thiết bị nhỏ (máy tính bảng dọc và điện thoại lớn, 740px trở lên) */
+        @media only screen and (min-width: 46.25rem) and (max-width: 63.94rem) {
+        }
+
+        /* Thiết bị trung bình (máy tính bảng ngang, 1024px trở lên) */
+        @media only screen and (min-width: 64rem) {
+        }
+      </code> </pre>
+    </section>
+
+    <section></section>
+  </body>
+</html>
