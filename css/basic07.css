@@ -40,3 +40,12 @@ ul.galery li {
 ul.galery li:nth-child(3n + 3) {
   margin-right: 0;
 }
+a {
+  color: #555;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s color;
+}
+a:hover {
+  color: #359a9a;
+}
