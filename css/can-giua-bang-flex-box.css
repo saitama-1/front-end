@@ -20,6 +20,10 @@ footer {
   margin: 10px 0;
 }
 
+footer:hover {
+  box-shadow: none;s
+}
+
 @media screen and (max-width: 600px) {
   section.container {
     background-color: lightblue;
