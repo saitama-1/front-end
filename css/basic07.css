@@ -1,0 +1,42 @@
+.wrap {
+  width: 1130px;
+  margin: 0 auto;
+  background-color: #f8f8f8;
+  padding-top: 20px;
+}
+
+.wrap h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.wrap h2:after {
+  background-color: #339999;
+  content: "";
+  display: block;
+  height: 3px;
+  margin: 11px auto 30px;
+  position: relative;
+  width: 75px;
+}
+ul.nav {
+  text-align: center;
+  margin-bottom: 20px;
+}
+ul.nav li {
+  display: inline;
+  margin-right: 10px;
+}
+
+ul.galery {
+  background-color: #fff;
+  padding: 10px;
+}
+ul.galery li {
+  float: left;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+ul.galery li:nth-child(3n + 3) {
+  margin-right: 0;
+}

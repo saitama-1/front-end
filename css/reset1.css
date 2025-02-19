@@ -1,0 +1,80 @@
+/* Reset */
+/* Reset cơ bản */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Định dạng lại font chữ mặc định */
+html {
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%; /* Ngăn trình duyệt thay đổi kích thước font */
+}
+
+/* Reset danh sách */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Reset thẻ inline */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Reset thẻ heading */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/* Reset thẻ bảng */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+/* Reset thẻ form */
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  border: none;
+  outline: none;
+}
+
+/* Reset hình ảnh */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Định dạng mặc định cho body */
+body {
+  font-family: sans-serif;
+  background-color: #fff;
+  color: #333;
+}
+
+/* Tạo class .clearfix để xử lý vấn đề float */
+.clearfix {
+  zoom: 1; /* Kích hoạt hasLayout trong IE6, IE7 để giúp phần tử cha bao bọc các phần tử con float */
+}
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  line-height: 0;
+  visibility: hidden;
+}
