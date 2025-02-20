@@ -9,7 +9,7 @@
 /* Định dạng lại font chữ mặc định */
 html {
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 1.6;
   -webkit-text-size-adjust: 100%; /* Ngăn trình duyệt thay đổi kích thước font */
 }
 
