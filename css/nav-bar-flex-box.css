@@ -1,0 +1,18 @@
+a:hover {
+  text-decoration: underline;
+}
+header {
+  width: 60%;
+  margin: 0 auto;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+li {
+  display: inline;
+  margin-right: 10px;
+}
