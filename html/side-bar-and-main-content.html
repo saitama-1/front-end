@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bố Cục Trang Web</title>
+    <link rel="stylesheet" href="" />
+    <style>
+      /* Reset CSS */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        display: grid;
+        grid-template-rows: auto 1fr auto; /* Header, Main, Footer */
+        min-height: 100vh;
+      }
+
+      /* Header */
+      header {
+        background-color: #333;
+        color: white;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .nav-links {
+        display: flex;
+        list-style: none;
+        gap: 20px;
+      }
+
+      .nav-links a {
+        color: white;
+        text-decoration: none;
+      }
+
+      /* Main Content */
+      main {
+        display: grid;
+        grid-template-columns: 2fr 1fr; /* Main và Aside */
+        gap: 20px;
+        padding: 20px;
+      }
+
+      .hero,
+      .features {
+        background-color: #f9f9f9;
+        padding: 20px;
+        border: 1px solid #ddd;
+      }
+
+      .features {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2 cột */
+        gap: 20px;
+      }
+
+      .features article {
+        background-color: white;
+        padding: 15px;
+        border: 1px solid #ccc;
+      }
+
+      /* Aside */
+      aside {
+        background-color: #f1c40f;
+        padding: 20px;
+      }
+
+      /* Footer */
+      footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">Logo</div>
+        <ul class="nav-links">
+          <li><a href="#">Trang chủ</a></li>
+          <li><a href="#">Giới thiệu</a></li>
+          <li><a href="#">Dịch vụ</a></li>
+          <li><a href="#">Liên hệ</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h1>Chào mừng đến với trang web của chúng tôi</h1>
+        <p>Đây là phần giới thiệu ngắn.</p>
+      </section>
+
+      <section class="features">
+        <article>
+          <h2>Tính năng 1</h2>
+          <p>Mô tả tính năng 1.</p>
+        </article>
+        <article>
+          <h2>Tính năng 2</h2>
+          <p>Mô tả tính năng 2.</p>
+        </article>
+      </section>
+    </main>
+
+    <aside>
+      <h2>Tin tức mới</h2>
+      <p>Đây là phần tin tức bên lề.</p>
+    </aside>
+
+    <footer>
+      <p>&copy; 2023 Trang web của tôi. Mọi quyền được bảo lưu.</p>
+    </footer>
+  </body>
+</html>
