@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #group {
+        display: flex;
+        justify-content: center;
+      }
+
+      #group div {
+        height: 100px;
+        width: 100px;
+        line-height: 100px;
+        text-align: center;
+      }
+
+      #group #blockA {
+        background-color: red;
+      }
+
+      #group #blockB {
+        background-color: green;
+      }
+
+      #group #blockC {
+        background-color: yellow;
+      }
+
+      #group #blockD {
+        background-color: pink;
+      }
+
+      @media only screen and (max-width: 600px) {
+        #group {
+          flex-direction: column;
+        }
+
+        #group div {
+          width: 50%;
+          margin: 0 auto;
+        }
+
+        #group #blockA {
+          order: 3;
+        }
+
+        #group #blockB {
+          order: 1;
+        }
+
+        #group #blockC {
+          order: 4;
+        }
+
+        #group #blockD {
+          order: 2;
+        }
+      }
+      @media only screen and (max-width: 480px) {
+        #group div {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="group">
+      <div id="blockA">A</div>
+      <div id="blockB">B</div>
+      <div id="blockC">C</div>
+      <div id="blockD">D</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        margin: 0 auto;
+        border: 1px solid #ccc;
+        width: 100%;
+        max-width: 600px;
+      }
+      div:after {
+        clear: both;
+        content: ".";
+        display: block;
+        height: 0;
+        line-height: 0;
+        visibility: hidden;
+      }
+
+      .image {
+        float: left;
+        margin-right: 20px;
+        width: 200px;
+      }
+      .image img {
+        width: 100%;
+      }
+      .text {
+        float: left;
+        width: 380px;
+      }
+      @media only screen and (max-width: 640px) {
+        .image,
+        .text {
+          float: none;
+          width: 100%;
+        }
+
+        .image {
+          /* margin-right: 0; */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p class="image">
+        <img
+          src="https://hocwebchuan.com/tutorial/responsive/images/img_responsive.jpg"
+          alt=""
+        />
+      </p>
+      <p class="text">
+        Cras vitae orci mattis, venenatis nisl in, ullamcorper orci. Aliquam
+        ultricies, nunc eu tincidunt tempus, lectus quam fermentum orci, nec
+        congue nunc metus molestie velit. Pellentesque vel vulputate dui. Donec
+        et congue magna. Maecenas dignissim ut libero vel euismod. Maecenas et
+        vestibulum nisi, in rutrum ligula. Vivamus a varius enim.
+      </p>
+    </div>
+  </body>
+</html>
