@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="w3-row">
+        <div class="header-left w3-col l5">
+          <div class="w3-row">
+            <div class="logo w3-col l2">
+              <img src="https://placehold.co/38x36" alt="logo" />
+            </div>
+            <div class="navigation w3-bar w3-col l10">
+              <a href="#" class="w3-bar-item w3-button">Home</a>
+              <a href="#" class="w3-bar-item w3-button">Link 1</a>
+              <div class="w3-dropdown-click">
+                <button class="w3-button" onclick="dropDownItem()">
+                  Click dropdonw <i class="fa fa-caret-down"></i>
+                </button>
+                <div
+                  id="demo"
+                  class="w3-dropdown-content w3-bar-block w3-card-4"
+                >
+                  <a href="#" class="w3-bar-item w3-button">Link 1</a>
+                  <a href="#" class="w3-bar-item w3-button">Link 2</a>
+                  <a href="#" class="w3-bar-item w3-button">Link 3</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header-mid w3-col l2 w3-row">
+          <input
+            type="text"
+            class="w3-bar-item w3-input w3-col l9"
+            placeholder="Search.."
+          />
+          <a href="#" class="w3-bar-item w3-button w3-green w3-col l3">Go</a>
+        </div>
+        <div class="header-right w3-col l5">
+          <button class="w3-btn w3-round-xlarge w3-right">LIST 1</button>
+          <button class="w3-btn w3-round-xlarge w3-right">LIST 1</button>
+          <button class="w3-btn w3-round-xlarge w3-right">LIST 1</button>
+          <button class="w3-btn w3-round-xlarge w3-right">LIST 1</button>
+          <button class="w3-btn w3-round-xlarge w3-right">LIST 1</button>
+        </div>
+      </div>
+    </header>
+    <nav>
+      <div class="navigation w3-bar w3-col l10">
+        <a href="#" class="w3-bar-item w3-button">Home</a>
+        <a href="#" class="w3-bar-item w3-button">Link 1</a>
+        <div class="w3-dropdown-hover">
+          <button class="w3-button">
+            hand over <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="w3-dropdown-content w3-bar-block w3-card-4">
+            <a href="#" class="w3-bar-item w3-button">Link 1</a>
+            <a href="#" class="w3-bar-item w3-button">Link 2</a>
+            <a href="#" class="w3-bar-item w3-button">Link 3</a>
+          </div>
+        </div>
+        <div class="w3-dropdown-hover">
+          <button class="w3-button">
+            hero menu <i class="fa fa-caret-down"></i>
+          </button>
+          <div
+            class="w3-dropdown-content w3-bar-block w3-card-4"
+            style="width: 500px; height: 500px"
+          >
+            <div class="w3-row">
+              <div class="w3-col l4">
+                <a href="#" class="w3-bar-item w3-button">Link 1</a>
+                <a href="#" class="w3-bar-item w3-button">Link 2</a>
+                <a href="#" class="w3-bar-item w3-button">Link 3</a>
+              </div>
+              <div class="w3-col l4">
+                <a href="#" class="w3-bar-item w3-button">Link 1</a>
+                <a href="#" class="w3-bar-item w3-button">Link 2</a>
+                <a href="#" class="w3-bar-item w3-button">Link 3</a>
+              </div>
+              <div class="w3-col l4">
+                <a href="#" class="w3-bar-item w3-button">Link 1</a>
+                <a href="#" class="w3-bar-item w3-button">Link 2</a>
+                <a href="#" class="w3-bar-item w3-button">Link 3</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Sidebar -->
+    <div class="w3-sidebar w3-light-grey w3-bar-block" style="width: 25%">
+      <h3 class="w3-bar-item">Menu</h3>
+      <a href="#" class="w3-bar-item w3-button">Link 1</a>
+      <a href="#" class="w3-bar-item w3-button">Link 2</a>
+      <a href="#" class="w3-bar-item w3-button">Link 3</a>
+    </div>
+
+    <!-- Page Content -->
+    <div style="margin-left: 25%">
+      <div class="w3-container w3-teal">
+        <h1>My Page</h1>
+      </div>
+
+      <img src="img_car.jpg" alt="Car" style="width: 100%" />
+
+      <div class="w3-container">
+        <h2>Sidebar Navigation Example</h2>
+        <p>The sidebar with is set with "style="width:25%".</p>
+        <p>The left margin of the page content is set to the same value.</p>
+      </div>
+    </div>
+
+    <script>
+      function dropDownItem() {
+        var x = document.getElementById("demo");
+        if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+        } else {
+          x.className = x.className.replace(" w3-show", "");
+        }
+      }
+
+      document.addEventListener("click", function (event) {
+        var dropdown = document.getElementById("demo");
+        var button = document.querySelector(".w3-dropdown-click .w3-button");
+        // Kiểm tra xem click có nằm ngoài dropdown và button không
+        if (
+          !dropdown.contains(event.target) &&
+          !button.contains(event.target)
+        ) {
+          dropdown.classList.remove("w3-show");
+        }
+      });
+    </script>
+  </body>
+</html>
