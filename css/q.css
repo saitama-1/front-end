@@ -1,0 +1,29 @@
+/* margin */
+.q-mt-0 {
+  margin-top: 0 !important;
+}
+
+/* drop right */
+.q-dropright-hover,
+.q-dropright-click {
+  position: relative;
+  display: inline-block;
+}
+.q-dropright-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  top: 0;
+  left: 100%;
+  z-index: 1;
+}
+.q-dropright-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.q-dropright-hover:hover .q-dropright-content {
+  display: block;
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu 2 Cấp</title>
+    <style>
+      /* Reset CSS */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+      }
+
+      /* Navigation Bar */
+      .navbar {
+        background-color: #333;
+        padding: 10px;
+      }
+
+      .navbar ul {
+        list-style-type: none;
+        display: flex;
+      }
+
+      .navbar ul li {
+        position: relative;
+      }
+
+      .navbar ul li a {
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        display: block;
+      }
+
+      .navbar ul li a:hover {
+        background-color: #555;
+      }
+
+      /* Dropdown Menu (Cấp 1) */
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        top: 100%; /* Hiển thị bên dưới */
+        left: 0;
+        background-color: #444;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+      }
+
+      .dropdown-content a {
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+
+      .dropdown-content a:hover {
+        background-color: #666;
+      }
+
+      /* Drop-Right Menu (Cấp 2) */
+      .drop-right-content {
+        display: none;
+        position: absolute;
+        left: 100%; /* Hiển thị bên phải */
+        top: 0; /* Căn theo đỉnh của item cha */
+        background-color: #555;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+      }
+
+      .drop-right-content a {
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+
+      .drop-right-content a:hover {
+        background-color: #777;
+      }
+
+      /* Hiển thị dropdown và drop-right menu khi hover */
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+
+      .drop-right:hover .drop-right-content {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <ul>
+        <li><a href="#">Trang chủ</a></li>
+        <li class="dropdown">
+          <a href="#">Menu Cấp 1 <i class="arrow"></i></a>
+          <ul class="dropdown-content">
+            <li><a href="#">Item 1</a></li>
+            <li><a href="#">Item 2</a></li>
+            <li><a href="#">Item 3</a></li>
+          </ul>
+        </li>
+        <li class="drop-right">
+          <a href="#">Item 3 <i class="arrow"></i></a>
+          <div class="drop-right-content">
+            <a href="#">Sub-Item 1</a>
+            <a href="#">Sub-Item 2</a>
+            <a href="#">Sub-Item 3</a>
+          </div>
+        </li>
+        <li><a href="#">Liên hệ</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>

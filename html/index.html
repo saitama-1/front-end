@@ -4,65 +4,1062 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Trang chủ</title>
+    <title>Vietcomcisco</title>
+    <link rel="stylesheet" href="../css/reset1.css" />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="../css/q.css" />
     <link rel="stylesheet" href="../css/style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <style>
+      /* style cho slide show */
+      .mySlides {
+        display: none;
+      }
+      .w3-left,
+      .w3-right,
+      .w3-badge {
+        cursor: pointer;
+      }
+      .w3-badge {
+        height: 13px;
+        width: 13px;
+        padding: 0;
+      }
+
+      /* style cho ... */
+    </style>
   </head>
   <body>
     <!-- Header với logo bên trái và danh sách link bên phải -->
-    <section class="">
-      <header class="w3-container w3-teal">
-        <div class="w3-row">
-          <div class="w3-col m6">
-            <div class="w3-row">
-              <div class="w3-col m6 w3-center">
-                <img src="https://placehold.co/150x100" alt="logo" />
-              </div>
-              <div class="w3-col m6 w3-center">Tên trang web</div>
+    <header class="w3-container w3-teal">
+      <div class="w3-row">
+        <div class="w3-col m6">
+          <div class="w3-row">
+            <div class="w3-col m6 w3-left">
+              <img src="https://placehold.co/100x50" alt="logo" />
+            </div>
+            <div class="w3-col m6 w3-center">
+              Tên trang web và thanh tìm kiếm
             </div>
           </div>
-          <div class="w3-col m6">
-            <nav class="w3-bar w3-teal">
-              <a href="#" class="w3-bar-item w3-button w3-right w3-mobile"
-                >Trang chủ</a
-              >
-              <a href="#" class="w3-bar-item w3-button w3-right w3-mobile"
-                >Giới thiệu</a
-              >
-              <a href="#" class="w3-bar-item w3-button w3-right w3-mobile"
-                >Dịch vụ</a
-              >
-              <a href="#" class="w3-bar-item w3-button w3-right w3-mobile"
-                >Liên hệ</a
-              >
-            </nav>
-          </div>
         </div>
-      </header>
-    </section>
+        <div class="w3-col m6">
+          <nav class="w3-bar w3-teal">
+            <a href="#" class="w3-bar-item w3-button w3-right w3-mobile"
+              >Trang chủ</a
+            >
+            <a href="#" class="w3-bar-item w3-button w3-right w3-mobile"
+              >Giới thiệu</a
+            >
+            <a href="#" class="w3-bar-item w3-button w3-right w3-mobile"
+              >Dịch vụ</a
+            >
+            <a href="#" class="w3-bar-item w3-button w3-right w3-mobile"
+              >Liên hệ</a
+            >
+          </nav>
+        </div>
+      </div>
+    </header>
 
     <!-- navigation bar -->
-    <section>
-      <div class="w3-bar w3-light-grey">
-        <a href="#" class="w3-bar-item w3-button">Home</a>
-        <a href="#" class="w3-bar-item w3-button">Link 1</a>
-        <div class="w3-dropdown-hover">
-          <button class="w3-button">
-            Dropdown <i class="fa fa-caret-down" aria-hidden="true"></i>
-          </button>
-          <div class="w3-dropdown-content w3-bar-block w3-card-4">
+    <nav class="w3-row w3-light-grey w3-margin-bottom">
+      <div class="q-dropright-hover w3-left-align">
+        <button class="q-dropbtn w3-button">dropright</button>
+        <div class="q-dropright-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div>
+      <div class="q-dropright-hover">
+        <button class="q-dropbtn w3-button">dropright</button>
+        <div class="q-dropright-content">
+          <a href="#" class="w3-button">Link 1</a>
+          <a href="#" class="w3-button">Link 2</a>
+          <a href="#" class="w3-button">Link 3</a>
+        </div>
+      </div>
+      <div class="q-dropright-hover">
+        <button class="q-dropbtn w3-button">dropright</button>
+        <div class="q-dropright-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div>
+    </nav>
+
+    <main class="">
+      <div class="w3-row">
+        <!--main left Sidebar -->
+        <div class="w3-col l2 w3-container">
+          <div class="w3-light-grey w3-bar-block">
+            <h3 class="w3-bar-item q-mt-0">Menu</h3>
             <a href="#" class="w3-bar-item w3-button">Link 1</a>
-            <a href="#" class="w3-bar-item w3-button"
-              >Link 2</i
-            ></a>
+            <a href="#" class="w3-bar-item w3-button">Link 2</a>
+            <div class="w3-dropdown-hover">
+              <button class="w3-button">
+                Dropdown
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="w3-dropdown-content w3-bar-block">
+                <a href="#" class="w3-bar-item w3-button">Link</a>
+                <a href="#" class="w3-bar-item w3-button">Link</a>
+              </div>
+            </div>
             <a href="#" class="w3-bar-item w3-button">Link 3</a>
+            <button
+              class="w3-button w3-block w3-left-align"
+              onclick="myAccFunc()"
+            >
+              Accordion <i class="fa fa-caret-down"></i>
+            </button>
+            <div id="demoAcc" class="w3-hide w3-white w3-card">
+              <a href="#" class="w3-bar-item w3-button">Link</a>
+              <a href="#" class="w3-bar-item w3-button">Link</a>
+            </div>
+
+            <div class="w3-dropdown-click">
+              <button class="w3-button" onclick="myDropFunc(this)">
+                Dropdown click <i class="fa fa-caret-down"></i>
+              </button>
+              <div
+                id="demoDrop1"
+                class="w3-dropdown-content w3-bar-block w3-white w3-card"
+              >
+                <a href="#" class="w3-bar-item w3-button">Link</a>
+                <a href="#" class="w3-bar-item w3-button">Link</a>
+              </div>
+            </div>
+            <div class="q-dropright-click">
+              <button class="q-dropbtn w3-button" onclick="myDropFunc(this)">
+                dropright 1<i class="fa fa-caret-right"></i>
+              </button>
+              <div class="q-dropright-content" id="demoDrop">
+                <div class="q-dropright-click">
+                  <button
+                    class="q-dropbtn w3-button"
+                    onclick="myDropFunc(this)"
+                  >
+                    dropright 1.1<i class="fa fa-caret-right"></i>
+                  </button>
+                  <div class="q-dropright-content" id="demoDrop">
+                    <a href="#" class="w3-button">Link 1</a>
+                    <a href="#" class="w3-button">Link 2</a>
+                    <a href="#" class="w3-button">Link 3</a>
+                  </div>
+                </div>
+                <div class="q-dropright-click">
+                  <button
+                    class="q-dropbtn w3-button"
+                    onclick="myDropFunc(this)"
+                  >
+                    dropright 1.2<i class="fa fa-caret-right"></i>
+                  </button>
+                  <div class="q-dropright-content" id="demoDrop">
+                    <a href="#" class="w3-button">Link 1</a>
+                    <a href="#" class="w3-button">Link 2</a>
+                    <a href="#" class="w3-button">Link 3</a>
+                  </div>
+                </div>
+                <a href="#" class="w3-button">Link 3</a>
+              </div>
+            </div>
+            <div class="q-dropright-click">
+              <button class="q-dropbtn w3-button" onclick="myDropFunc(this)">
+                dropright 2 <i class="fa fa-caret-right"></i>
+              </button>
+              <div class="q-dropright-content" id="demoDrop">
+                <a href="#" class="w3-button">Link 1</a>
+                <a href="#" class="w3-button">Link 2</a>
+                <a href="#" class="w3-button">Link 3</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- main banner và quảng cáo -->
+        <div class="w3-col l8">
+          <div>
+            <div class="w3-container w3-teal">
+              <h1>My Page</h1>
+            </div>
+
+            <!-- slide show -->
+            <div class="w3-content w3-display-container">
+              <img
+                class="mySlides"
+                src="https://www.w3schools.com/w3css/img_nature_wide.jpg"
+                style="width: 100%"
+              />
+              <img
+                class="mySlides"
+                src="https://www.w3schools.com/w3css/img_snow_wide.jpg"
+                style="width: 100%"
+              />
+              <img
+                class="mySlides"
+                src="https://www.w3schools.com/w3css/img_mountains_wide.jpg"
+                style="width: 100%"
+              />
+              <div
+                class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle"
+                style="width: 100%"
+              >
+                <span
+                  class="w3-badge demo w3-border w3-transparent w3-hover-white"
+                  onclick="currentDiv(1)"
+                ></span>
+                <span
+                  class="w3-badge demo w3-border w3-transparent w3-hover-white"
+                  onclick="currentDiv(2)"
+                ></span>
+                <span
+                  class="w3-badge demo w3-border w3-transparent w3-hover-white"
+                  onclick="currentDiv(3)"
+                ></span>
+              </div>
+
+              <button
+                class="w3-button w3-display-left w3-black"
+                onclick="plusDivs(-1)"
+              >
+                &#10094;
+              </button>
+              <button
+                class="w3-button w3-display-right w3-black"
+                onclick="plusDivs(1)"
+              >
+                &#10095;
+              </button>
+            </div>
+
+            <!-- nội dung dưới slide show -->
+            <div class="w3-row">
+              <div class="w3-half">
+                <p class="w3-border w3-padding-large w3-padding-32 w3-center">
+                  AD
+                </p>
+              </div>
+              <div class="w3-half">
+                <p class="w3-border w3-padding-large w3-padding-32 w3-center">
+                  AD
+                </p>
+              </div>
+              <div class="w3-half">
+                <p class="w3-border w3-padding-large w3-padding-32 w3-center">
+                  AD
+                </p>
+              </div>
+              <div class="w3-half">
+                <p class="w3-border w3-padding-large w3-padding-32 w3-center">
+                  AD
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- main right side bar -->
+        <div class="w3-container w3-col l2">
+          <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
+          <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
+          <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
+          <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
+          <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
+          <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
+        </div>
+      </div>
+
+      <!-- main content -->
+
+      <div class="w3-row">
+        <div class="w3-col l12 w3-container">
+          <div class="white w3-margin-bottom">
+            <div class="w3-container w3-indigo">
+              <h3>Switch</h3>
+            </div>
+          </div>
+        </div>
+        <div class="w3-col l2 w3-container w3-margin-bottom">
+          <a href="#"
+            ><img
+              src="https://www.w3schools.com/w3images/mountains.jpg"
+              alt="Norway"
+              style="width: 100%"
+              class="w3-hover-opacity"
+          /></a>
+
+          <div class="w3-white">
+            <p>
+              <b>Lorem Ipsum</b>
+            </p>
+            <p class="w3-small">
+              Praesent tincidunt sed tellus ut rutrum. Sed vitae justo
+              condimentum, porta lectus vitae, ultricies congue gravida diam non
+              fringilla.
+            </p>
+          </div>
+        </div>
+        <div class="w3-col l2 w3-container w3-margin-bottom">
+          <a href="#"
+            ><img
+              src="https://www.w3schools.com/w3images/mountains.jpg"
+              alt="Norway"
+              style="width: 100%"
+              class="w3-hover-opacity"
+          /></a>
+
+          <div class="w3-white">
+            <p>
+              <b>Lorem Ipsum</b>
+            </p>
+            <p class="w3-small">
+              Praesent tincidunt sed tellus ut rutrum. Sed vitae justo
+              condimentum, porta lectus vitae, ultricies congue gravida diam non
+              fringilla.
+            </p>
+          </div>
+        </div>
+        <div class="w3-col l2 w3-container w3-margin-bottom">
+          <a href="#"
+            ><img
+              src="https://www.w3schools.com/w3images/mountains.jpg"
+              alt="Norway"
+              style="width: 100%"
+              class="w3-hover-opacity"
+          /></a>
+
+          <div class="w3-white">
+            <p>
+              <b>Lorem Ipsum</b>
+            </p>
+            <p class="w3-small">
+              Praesent tincidunt sed tellus ut rutrum. Sed vitae justo
+              condimentum, porta lectus vitae, ultricies congue gravida diam non
+              fringilla.
+            </p>
+          </div>
+        </div>
+        <div class="w3-col l2 w3-container w3-margin-bottom">
+          <a href="#"
+            ><img
+              src="https://www.w3schools.com/w3images/mountains.jpg"
+              alt="Norway"
+              style="width: 100%"
+              class="w3-hover-opacity"
+          /></a>
+
+          <div class="w3-white">
+            <p>
+              <b>Lorem Ipsum</b>
+            </p>
+            <p class="w3-small">
+              Praesent tincidunt sed tellus ut rutrum. Sed vitae justo
+              condimentum, porta lectus vitae, ultricies congue gravida diam non
+              fringilla.
+            </p>
+          </div>
+        </div>
+        <div class="w3-col l2 w3-container w3-margin-bottom">
+          <a href="#"
+            ><img
+              src="https://www.w3schools.com/w3images/mountains.jpg"
+              alt="Norway"
+              style="width: 100%"
+              class="w3-hover-opacity"
+          /></a>
+
+          <div class="w3-white">
+            <p>
+              <b>Lorem Ipsum</b>
+            </p>
+            <p class="w3-small">
+              Praesent tincidunt sed tellus ut rutrum. Sed vitae justo
+              condimentum, porta lectus vitae, ultricies congue gravida diam non
+              fringilla.
+            </p>
+          </div>
+        </div>
+        <div class="w3-col l2 w3-container w3-margin-bottom">
+          <a href="#"
+            ><img
+              src="https://www.w3schools.com/w3images/mountains.jpg"
+              alt="Norway"
+              style="width: 100%"
+              class="w3-hover-opacity"
+          /></a>
+
+          <div class="w3-white">
+            <p>
+              <b>Lorem Ipsum</b>
+            </p>
+            <p class="w3-small">
+              Praesent tincidunt sed tellus ut rutrum. Sed vitae justo
+              condimentum, porta lectus vitae, ultricies congue gravida diam non
+              fringilla.
+            </p>
+          </div>
+        </div>
+        <div class="w3-col l2 w3-container w3-margin-bottom">
+          <a href="#"
+            ><img
+              src="https://www.w3schools.com/w3images/mountains.jpg"
+              alt="Norway"
+              style="width: 100%"
+              class="w3-hover-opacity"
+          /></a>
+
+          <div class="w3-white">
+            <p>
+              <b>Lorem Ipsum</b>
+            </p>
+            <p class="w3-small">
+              Praesent tincidunt sed tellus ut rutrum. Sed vitae justo
+              condimentum, porta lectus vitae, ultricies congue gravida diam non
+              fringilla.
+            </p>
+          </div>
+        </div>
+        <div class="w3-col l2 w3-container w3-margin-bottom">
+          <a href="#"
+            ><img
+              src="https://www.w3schools.com/w3images/mountains.jpg"
+              alt="Norway"
+              style="width: 100%"
+              class="w3-hover-opacity"
+          /></a>
+
+          <div class="w3-white">
+            <p>
+              <b>Lorem Ipsum</b>
+            </p>
+            <p class="w3-small">
+              Praesent tincidunt sed tellus ut rutrum. Sed vitae justo
+              condimentum, porta lectus vitae, ultricies congue gravida diam non
+              fringilla.
+            </p>
+          </div>
+        </div>
+        <div class="w3-col l2 w3-container w3-margin-bottom">
+          <a href="#"
+            ><img
+              src="https://www.w3schools.com/w3images/mountains.jpg"
+              alt="Norway"
+              style="width: 100%"
+              class="w3-hover-opacity"
+          /></a>
+
+          <div class="w3-white">
+            <p>
+              <b>Lorem Ipsum</b>
+            </p>
+            <p class="w3-small">
+              Praesent tincidunt sed tellus ut rutrum. Sed vitae justo
+              condimentum, porta lectus vitae, ultricies congue gravida diam non
+              fringilla.
+            </p>
+          </div>
+        </div>
+        <div class="w3-col l2 w3-container w3-margin-bottom">
+          <a href="#"
+            ><img
+              src="https://www.w3schools.com/w3images/mountains.jpg"
+              alt="Norway"
+              style="width: 100%"
+              class="w3-hover-opacity"
+          /></a>
+
+          <div class="w3-white">
+            <p>
+              <b>Lorem Ipsum</b>
+            </p>
+            <p class="w3-small">
+              Praesent tincidunt sed tellus ut rutrum. Sed vitae justo
+              condimentum, porta lectus vitae, ultricies congue gravida diam non
+              fringilla.
+            </p>
+          </div>
+        </div>
+        <div class="w3-col l2 w3-container w3-margin-bottom">
+          <a href="#"
+            ><img
+              src="https://www.w3schools.com/w3images/mountains.jpg"
+              alt="Norway"
+              style="width: 100%"
+              class="w3-hover-opacity"
+          /></a>
+
+          <div class="w3-white">
+            <p>
+              <b>Lorem Ipsum</b>
+            </p>
+            <p class="w3-small">
+              Praesent tincidunt sed tellus ut rutrum. Sed vitae justo
+              condimentum, porta lectus vitae, ultricies congue gravida diam non
+              fringilla.
+            </p>
           </div>
         </div>
       </div>
-    </section>
+      <div class="w3-row">
+        <div class="w3-col l12">
+          <div class="white w3-margin-bottom">
+            <div class="w3-container w3-indigo">
+              <h3>Router</h3>
+            </div>
+          </div>
+        </div>
+        <div class="w3-col l2 w3-container w3-margin-bottom">
+          <a href="#"
+            ><img
+              src="https://www.w3schools.com/w3images/mountains.jpg"
+              alt="Norway"
+              style="width: 100%"
+              class="w3-hover-opacity"
+          /></a>
+
+          <div class="w3-white">
+            <p>
+              <b>Lorem Ipsum</b>
+            </p>
+            <p class="w3-small">
+              Praesent tincidunt sed tellus ut rutrum. Sed vitae justo
+              condimentum, porta lectus vitae, ultricies congue gravida diam non
+              fringilla.
+            </p>
+          </div>
+        </div>
+        <div class="w3-col l2 w3-container w3-margin-bottom">
+          <a href="#"
+            ><img
+              src="https://www.w3schools.com/w3images/mountains.jpg"
+              alt="Norway"
+              style="width: 100%"
+              class="w3-hover-opacity"
+          /></a>
+
+          <div class="w3-white">
+            <p>
+              <b>Lorem Ipsum</b>
+            </p>
+            <p class="w3-small">
+              Praesent tincidunt sed tellus ut rutrum. Sed vitae justo
+              condimentum, porta lectus vitae, ultricies congue gravida diam non
+              fringilla.
+            </p>
+          </div>
+        </div>
+        <div class="w3-col l2 w3-container w3-margin-bottom">
+          <a href="#"
+            ><img
+              src="https://www.w3schools.com/w3images/mountains.jpg"
+              alt="Norway"
+              style="width: 100%"
+              class="w3-hover-opacity"
+          /></a>
+
+          <div class="w3-white">
+            <p>
+              <b>Lorem Ipsum</b>
+            </p>
+            <p class="w3-small">
+              Praesent tincidunt sed tellus ut rutrum. Sed vitae justo
+              condimentum, porta lectus vitae, ultricies congue gravida diam non
+              fringilla.
+            </p>
+          </div>
+        </div>
+        <div class="w3-col l2 w3-container w3-margin-bottom">
+          <a href="#"
+            ><img
+              src="https://www.w3schools.com/w3images/mountains.jpg"
+              alt="Norway"
+              style="width: 100%"
+              class="w3-hover-opacity"
+          /></a>
+
+          <div class="w3-white">
+            <p>
+              <b>Lorem Ipsum</b>
+            </p>
+            <p class="w3-small">
+              Praesent tincidunt sed tellus ut rutrum. Sed vitae justo
+              condimentum, porta lectus vitae, ultricies congue gravida diam non
+              fringilla.
+            </p>
+          </div>
+        </div>
+        <div class="w3-col l2 w3-container w3-margin-bottom">
+          <a href="#"
+            ><img
+              src="https://www.w3schools.com/w3images/mountains.jpg"
+              alt="Norway"
+              style="width: 100%"
+              class="w3-hover-opacity"
+          /></a>
+
+          <div class="w3-white">
+            <p>
+              <b>Lorem Ipsum</b>
+            </p>
+            <p class="w3-small">
+              Praesent tincidunt sed tellus ut rutrum. Sed vitae justo
+              condimentum, porta lectus vitae, ultricies congue gravida diam non
+              fringilla.
+            </p>
+          </div>
+        </div>
+        <div class="w3-col l2 w3-container w3-margin-bottom">
+          <a href="#"
+            ><img
+              src="https://www.w3schools.com/w3images/mountains.jpg"
+              alt="Norway"
+              style="width: 100%"
+              class="w3-hover-opacity"
+          /></a>
+
+          <div class="w3-white">
+            <p>
+              <b>Lorem Ipsum</b>
+            </p>
+            <p class="w3-small">
+              Praesent tincidunt sed tellus ut rutrum. Sed vitae justo
+              condimentum, porta lectus vitae, ultricies congue gravida diam non
+              fringilla.
+            </p>
+          </div>
+        </div>
+        <div class="w3-col l2 w3-container w3-margin-bottom">
+          <a href="#"
+            ><img
+              src="https://www.w3schools.com/w3images/mountains.jpg"
+              alt="Norway"
+              style="width: 100%"
+              class="w3-hover-opacity"
+          /></a>
+
+          <div class="w3-white">
+            <p>
+              <b>Lorem Ipsum</b>
+            </p>
+            <p class="w3-small">
+              Praesent tincidunt sed tellus ut rutrum. Sed vitae justo
+              condimentum, porta lectus vitae, ultricies congue gravida diam non
+              fringilla.
+            </p>
+          </div>
+        </div>
+        <div class="w3-col l2 w3-container w3-margin-bottom">
+          <a href="#"
+            ><img
+              src="https://www.w3schools.com/w3images/mountains.jpg"
+              alt="Norway"
+              style="width: 100%"
+              class="w3-hover-opacity"
+          /></a>
+
+          <div class="w3-white">
+            <p>
+              <b>Lorem Ipsum</b>
+            </p>
+            <p class="w3-small">
+              Praesent tincidunt sed tellus ut rutrum. Sed vitae justo
+              condimentum, porta lectus vitae, ultricies congue gravida diam non
+              fringilla.
+            </p>
+          </div>
+        </div>
+        <div class="w3-col l2 w3-container w3-margin-bottom">
+          <a href="#"
+            ><img
+              src="https://www.w3schools.com/w3images/mountains.jpg"
+              alt="Norway"
+              style="width: 100%"
+              class="w3-hover-opacity"
+          /></a>
+
+          <div class="w3-white">
+            <p>
+              <b>Lorem Ipsum</b>
+            </p>
+            <p class="w3-small">
+              Praesent tincidunt sed tellus ut rutrum. Sed vitae justo
+              condimentum, porta lectus vitae, ultricies congue gravida diam non
+              fringilla.
+            </p>
+          </div>
+        </div>
+        <div class="w3-col l2 w3-container w3-margin-bottom">
+          <a href="#"
+            ><img
+              src="https://www.w3schools.com/w3images/mountains.jpg"
+              alt="Norway"
+              style="width: 100%"
+              class="w3-hover-opacity"
+          /></a>
+
+          <div class="w3-white">
+            <p>
+              <b>Lorem Ipsum</b>
+            </p>
+            <p class="w3-small">
+              Praesent tincidunt sed tellus ut rutrum. Sed vitae justo
+              condimentum, porta lectus vitae, ultricies congue gravida diam non
+              fringilla.
+            </p>
+          </div>
+        </div>
+        <div class="w3-col l2 w3-container w3-margin-bottom">
+          <a href="#"
+            ><img
+              src="https://www.w3schools.com/w3images/mountains.jpg"
+              alt="Norway"
+              style="width: 100%"
+              class="w3-hover-opacity"
+          /></a>
+
+          <div class="w3-white">
+            <p>
+              <b>Lorem Ipsum</b>
+            </p>
+            <p class="w3-small">
+              Praesent tincidunt sed tellus ut rutrum. Sed vitae justo
+              condimentum, porta lectus vitae, ultricies congue gravida diam non
+              fringilla.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-row">
+        <div class="w3-col l12">
+          <div class="white w3-margin-bottom">
+            <div class="w3-container w3-indigo">
+              <h3>Firewall</h3>
+            </div>
+          </div>
+        </div>
+        <div class="w3-col l2 w3-container w3-margin-bottom">
+          <a href="#"
+            ><img
+              src="https://www.w3schools.com/w3images/mountains.jpg"
+              alt="Norway"
+              style="width: 100%"
+              class="w3-hover-opacity"
+          /></a>
+
+          <div class="w3-white">
+            <p>
+              <b>Lorem Ipsum</b>
+            </p>
+            <p class="w3-small">
+              Praesent tincidunt sed tellus ut rutrum. Sed vitae justo
+              condimentum, porta lectus vitae, ultricies congue gravida diam non
+              fringilla.
+            </p>
+          </div>
+        </div>
+        <div class="w3-col l2 w3-container w3-margin-bottom">
+          <a href="#"
+            ><img
+              src="https://www.w3schools.com/w3images/mountains.jpg"
+              alt="Norway"
+              style="width: 100%"
+              class="w3-hover-opacity"
+          /></a>
+
+          <div class="w3-white">
+            <p>
+              <b>Lorem Ipsum</b>
+            </p>
+            <p class="w3-small">
+              Praesent tincidunt sed tellus ut rutrum. Sed vitae justo
+              condimentum, porta lectus vitae, ultricies congue gravida diam non
+              fringilla.
+            </p>
+          </div>
+        </div>
+        <div class="w3-col l2 w3-container w3-margin-bottom">
+          <a href="#"
+            ><img
+              src="https://www.w3schools.com/w3images/mountains.jpg"
+              alt="Norway"
+              style="width: 100%"
+              class="w3-hover-opacity"
+          /></a>
+
+          <div class="w3-white">
+            <p>
+              <b>Lorem Ipsum</b>
+            </p>
+            <p class="w3-small">
+              Praesent tincidunt sed tellus ut rutrum. Sed vitae justo
+              condimentum, porta lectus vitae, ultricies congue gravida diam non
+              fringilla.
+            </p>
+          </div>
+        </div>
+        <div class="w3-col l2 w3-container w3-margin-bottom">
+          <a href="#"
+            ><img
+              src="https://www.w3schools.com/w3images/mountains.jpg"
+              alt="Norway"
+              style="width: 100%"
+              class="w3-hover-opacity"
+          /></a>
+
+          <div class="w3-white">
+            <p>
+              <b>Lorem Ipsum</b>
+            </p>
+            <p class="w3-small">
+              Praesent tincidunt sed tellus ut rutrum. Sed vitae justo
+              condimentum, porta lectus vitae, ultricies congue gravida diam non
+              fringilla.
+            </p>
+          </div>
+        </div>
+        <div class="w3-col l2 w3-container w3-margin-bottom">
+          <a href="#"
+            ><img
+              src="https://www.w3schools.com/w3images/mountains.jpg"
+              alt="Norway"
+              style="width: 100%"
+              class="w3-hover-opacity"
+          /></a>
+
+          <div class="w3-white">
+            <p>
+              <b>Lorem Ipsum</b>
+            </p>
+            <p class="w3-small">
+              Praesent tincidunt sed tellus ut rutrum. Sed vitae justo
+              condimentum, porta lectus vitae, ultricies congue gravida diam non
+              fringilla.
+            </p>
+          </div>
+        </div>
+        <div class="w3-col l2 w3-container w3-margin-bottom">
+          <a href="#"
+            ><img
+              src="https://www.w3schools.com/w3images/mountains.jpg"
+              alt="Norway"
+              style="width: 100%"
+              class="w3-hover-opacity"
+          /></a>
+
+          <div class="w3-white">
+            <p>
+              <b>Lorem Ipsum</b>
+            </p>
+            <p class="w3-small">
+              Praesent tincidunt sed tellus ut rutrum. Sed vitae justo
+              condimentum, porta lectus vitae, ultricies congue gravida diam non
+              fringilla.
+            </p>
+          </div>
+        </div>
+        <div class="w3-col l2 w3-container w3-margin-bottom">
+          <a href="#"
+            ><img
+              src="https://www.w3schools.com/w3images/mountains.jpg"
+              alt="Norway"
+              style="width: 100%"
+              class="w3-hover-opacity"
+          /></a>
+
+          <div class="w3-white">
+            <p>
+              <b>Lorem Ipsum</b>
+            </p>
+            <p class="w3-small">
+              Praesent tincidunt sed tellus ut rutrum. Sed vitae justo
+              condimentum, porta lectus vitae, ultricies congue gravida diam non
+              fringilla.
+            </p>
+          </div>
+        </div>
+        <div class="w3-col l2 w3-container w3-margin-bottom">
+          <a href="#"
+            ><img
+              src="https://www.w3schools.com/w3images/mountains.jpg"
+              alt="Norway"
+              style="width: 100%"
+              class="w3-hover-opacity"
+          /></a>
+
+          <div class="w3-white">
+            <p>
+              <b>Lorem Ipsum</b>
+            </p>
+            <p class="w3-small">
+              Praesent tincidunt sed tellus ut rutrum. Sed vitae justo
+              condimentum, porta lectus vitae, ultricies congue gravida diam non
+              fringilla.
+            </p>
+          </div>
+        </div>
+        <div class="w3-col l2 w3-container w3-margin-bottom">
+          <a href="#"
+            ><img
+              src="https://www.w3schools.com/w3images/mountains.jpg"
+              alt="Norway"
+              style="width: 100%"
+              class="w3-hover-opacity"
+          /></a>
+
+          <div class="w3-white">
+            <p>
+              <b>Lorem Ipsum</b>
+            </p>
+            <p class="w3-small">
+              Praesent tincidunt sed tellus ut rutrum. Sed vitae justo
+              condimentum, porta lectus vitae, ultricies congue gravida diam non
+              fringilla.
+            </p>
+          </div>
+        </div>
+        <div class="w3-col l2 w3-container w3-margin-bottom">
+          <a href="#"
+            ><img
+              src="https://www.w3schools.com/w3images/mountains.jpg"
+              alt="Norway"
+              style="width: 100%"
+              class="w3-hover-opacity"
+          /></a>
+
+          <div class="w3-white">
+            <p>
+              <b>Lorem Ipsum</b>
+            </p>
+            <p class="w3-small">
+              Praesent tincidunt sed tellus ut rutrum. Sed vitae justo
+              condimentum, porta lectus vitae, ultricies congue gravida diam non
+              fringilla.
+            </p>
+          </div>
+        </div>
+        <div class="w3-col l2 w3-container w3-margin-bottom">
+          <a href="#"
+            ><img
+              src="https://www.w3schools.com/w3images/mountains.jpg"
+              alt="Norway"
+              style="width: 100%"
+              class="w3-hover-opacity"
+          /></a>
+
+          <div class="w3-white">
+            <p>
+              <b>Lorem Ipsum</b>
+            </p>
+            <p class="w3-small">
+              Praesent tincidunt sed tellus ut rutrum. Sed vitae justo
+              condimentum, porta lectus vitae, ultricies congue gravida diam non
+              fringilla.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="w3-padding-64 w3-light-grey w3-small w3-center" id="footer">
+      <div class="w3-row-padding">
+        <div class="w3-col s4">
+          <h4>Contact</h4>
+          <p>Questions? Go ahead.</p>
+          <form action="/action_page.php" target="_blank">
+            <p>
+              <input
+                class="w3-input w3-border"
+                type="text"
+                placeholder="Name"
+                name="Name"
+                required
+              />
+            </p>
+            <p>
+              <input
+                class="w3-input w3-border"
+                type="text"
+                placeholder="Email"
+                name="Email"
+                required
+              />
+            </p>
+            <p>
+              <input
+                class="w3-input w3-border"
+                type="text"
+                placeholder="Subject"
+                name="Subject"
+                required
+              />
+            </p>
+            <p>
+              <input
+                class="w3-input w3-border"
+                type="text"
+                placeholder="Message"
+                name="Message"
+                required
+              />
+            </p>
+            <button type="submit" class="w3-button w3-block w3-black">
+              Send
+            </button>
+          </form>
+        </div>
+
+        <div class="w3-col s4">
+          <h4>About</h4>
+          <p><a href="#">About us</a></p>
+          <p><a href="#">We're hiring</a></p>
+          <p><a href="#">Support</a></p>
+          <p><a href="#">Find store</a></p>
+          <p><a href="#">Shipment</a></p>
+          <p><a href="#">Payment</a></p>
+          <p><a href="#">Gift card</a></p>
+          <p><a href="#">Return</a></p>
+          <p><a href="#">Help</a></p>
+        </div>
+
+        <div class="w3-col s4 w3-justify">
+          <h4>Store</h4>
+          <p><i class="fa fa-fw fa-map-marker"></i> Company Name</p>
+          <p><i class="fa fa-fw fa-phone"></i> 0044123123</p>
+          <p><i class="fa fa-fw fa-envelope"></i> ex@mail.com</p>
+          <h4>We accept</h4>
+          <p><i class="fa fa-fw fa-cc-amex"></i> Amex</p>
+          <p><i class="fa fa-fw fa-credit-card"></i> Credit Card</p>
+          <br />
+          <i class="fa fa-facebook-official w3-hover-opacity w3-large"></i>
+          <i class="fa fa-instagram w3-hover-opacity w3-large"></i>
+          <i class="fa fa-snapchat w3-hover-opacity w3-large"></i>
+          <i class="fa fa-pinterest-p w3-hover-opacity w3-large"></i>
+          <i class="fa fa-twitter w3-hover-opacity w3-large"></i>
+          <i class="fa fa-linkedin w3-hover-opacity w3-large"></i>
+        </div>
+      </div>
+    </footer>
+
+    <div class="w3-black w3-center w3-padding-24">
+      Powered by
+      <a
+        href="https://www.w3schools.com/w3css/default.asp"
+        title="W3.CSS"
+        target="_blank"
+        class="w3-hover-opacity"
+        >w3.css</a
+      >
+    </div>
+
+    <!-- End page content -->
+
+    <script src="../js/w3.js"></script>
   </body>
 </html>
