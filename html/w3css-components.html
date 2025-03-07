@@ -300,5 +300,55 @@
       &lt;img src=&quot;img_lights.jpg&quot; alt=&quot;Lights&quot; style=&quot;width:100%;max-width:400px&quot;&gt;
       </pre>
     </section>
+
+    <section>
+      <h2>W3.CSS Click Dropdowns</h2>
+      <p>sử dụng w3-dropdown-click theo bố cục sau</p>
+      <div class="w3-container">
+        <h2>Clickable Dropdown</h2>
+        <p>Click on the button to open the dropdown menu.</p>
+        <div class="w3-dropdown-click">
+          <button onclick="myFunction()" class="w3-button w3-black">
+            Click Me!
+          </button>
+          <div id="Demo" class="w3-dropdown-content w3-bar-block w3-border">
+            <a href="#" class="w3-bar-item w3-button">Link 1</a>
+            <a href="#" class="w3-bar-item w3-button">Link 2</a>
+            <a href="#" class="w3-bar-item w3-button">Link 3</a>
+          </div>
+        </div>
+      </div>
+
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolore
+        reiciendis ratione perferendis alias vitae accusantium laboriosam, nam
+        hic sequi ad aspernatur. Architecto accusamus laboriosam amet harum esse
+        provident tenetur?Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Optio dolore reiciendis ratione perferendis alias vitae
+        accusantium laboriosam, nam hic sequi ad aspernatur. Architecto
+        accusamus laboriosam amet harum esse provident tenetur?Lorem ipsum dolor
+        sit amet consectetur adipisicing elit. Optio dolore reiciendis ratione
+        perferendis alias vitae accusantium laboriosam, nam hic sequi ad
+        aspernatur. Architecto accusamus laboriosam amet harum esse provident
+        tenetur?Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+        dolore reiciendis ratione perferendis alias vitae accusantium
+        laboriosam, nam hic sequi ad aspernatur. Architecto accusamus laboriosam
+        amet harum esse provident tenetur?Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Optio dolore reiciendis ratione perferendis alias
+        vitae accusantium laboriosam, nam hic sequi ad aspernatur. Architecto
+        accusamus laboriosam amet harum esse provident tenetur?
+      </p>
+
+      <script>
+        function myFunction() {
+          var x = document.getElementById("Demo");
+          if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+          } else {
+            x.className = x.className.replace(" w3-show", "");
+          }
+        }
+      </script>
+    </section>
   </body>
 </html>
