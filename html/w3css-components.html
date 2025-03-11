@@ -25,9 +25,11 @@
         >W3.CSS Card Classes</a
       >
       <a href="#w3-css-text" class="w3-bar-item w3-button">W3.CSS Text</a>
-      <a href="#w3-css-padding" class="w3-bar-item w3-button">W3.CSS Padding</a>
+      <a href="#w3-css-padding" class="w3-bar-item w3-button"
+        >W3.CSS <strong class="w3-text-pink">Padding</strong></a
+      >
       <a href="#w3-css-margin" class="w3-bar-item w3-button"
-        >W3.CSS Margin Classes</a
+        >W3.CSS <strong class="w3-text-green">Margin</strong> Classes</a
       >
       <a href="#w3-css-display" class="w3-bar-item w3-button">W3.CSS Display</a>
       <a href="#responsive-images" class="w3-bar-item w3-button"
@@ -334,13 +336,10 @@
             <h5>Dropdown 1 cấp với nút bấm bật tắt</h5>
             <p>Click vào button để đóng mở menu</p>
             <div class="w3-dropdown-click">
-              <button onclick="showDropdown()" class="w3-button w3-black">
+              <button onclick="showDropdown(this)" class="w3-button w3-black">
                 Click Me!
               </button>
-              <div
-                id="Demo1"
-                class="w3-dropdown-content w3-bar-block w3-border"
-              >
+              <div class="w3-dropdown-content w3-bar-block w3-border">
                 <a href="#" class="w3-bar-item w3-button">Link 1</a>
                 <a href="#" class="w3-bar-item w3-button">Link 1</a>
                 <a href="#" class="w3-bar-item w3-button">Link 1</a>
@@ -350,37 +349,15 @@
 
           <div class="w3-cell">
             <h5>Dropdown đa cấp với nút bấm bật tắt</h5>
-            <p>Click vào button để đóng mở menu</p>
+            <p>Click vào button để đóng mở menu, click ra ngoài để đóng</p>
             <div class="w3-dropdown-click">
-              <button
-                onclick="showDropdown('Demo2')"
-                class="w3-button w3-black"
-              >
-                Click Me! (Menu cấp 1)
+              <button onclick="showDropdown(this)" class="w3-button w3-black">
+                Click Me!
               </button>
-              <div
-                id="Demo2"
-                class="w3-dropdown-content w3-bar-block w3-border"
-              >
+              <div class="w3-dropdown-content w3-bar-block w3-border">
                 <a href="#" class="w3-bar-item w3-button">Link 1</a>
                 <a href="#" class="w3-bar-item w3-button">Link 2</a>
                 <a href="#" class="w3-bar-item w3-button">Link 3</a>
-                <div class="w3-dropdown-click">
-                  <button
-                    onclick="showDropdown('Demo2-1', event)"
-                    class="w3-button w3-black"
-                  >
-                    Click Me! (Menu cấp 2)
-                  </button>
-                  <div
-                    id="Demo2-1"
-                    class="w3-dropdown-content w3-bar-block w3-border"
-                  >
-                    <a href="#" class="w3-bar-item w3-button">Link 2.1</a>
-                    <a href="#" class="w3-bar-item w3-button">Link 2.2</a>
-                    <a href="#" class="w3-bar-item w3-button">Link 2.3</a>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
@@ -390,37 +367,15 @@
               Dropdown đa cấp với nút bấm bật tắt và đóng menu khi click ra
               ngoài
             </h5>
-            <p>Click vào button để đóng mở menu</p>
+            <p>Click vào button để đóng mở menu, click ra ngoài để đóng</p>
             <div class="w3-dropdown-click">
-              <button
-                onclick="showDropdown('Demo3')"
-                class="w3-button w3-black"
-              >
-                Click Me! (Menu cấp 1)
+              <button onclick="showDropdown(this)" class="w3-button w3-black">
+                Click Me!
               </button>
-              <div
-                id="Demo3"
-                class="w3-dropdown-content w3-bar-block w3-border"
-              >
+              <div class="w3-dropdown-content w3-bar-block w3-border">
                 <a href="#" class="w3-bar-item w3-button">Link 1</a>
                 <a href="#" class="w3-bar-item w3-button">Link 2</a>
                 <a href="#" class="w3-bar-item w3-button">Link 3</a>
-                <div class="w3-dropdown-click">
-                  <button
-                    onclick="showDropdown('Demo3-1', event)"
-                    class="w3-button w3-black"
-                  >
-                    Click Me! (Menu cấp 2)
-                  </button>
-                  <div
-                    id="Demo3-1"
-                    class="w3-dropdown-content w3-bar-block w3-border"
-                  >
-                    <a href="#" class="w3-bar-item w3-button">Link 2.1</a>
-                    <a href="#" class="w3-bar-item w3-button">Link 2.2</a>
-                    <a href="#" class="w3-bar-item w3-button">Link 2.3</a>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
@@ -450,22 +405,30 @@
     </section>
 
     <script>
-      function showDropdown(id, event) {
-        // Ngăn chặn sự kiện click lan ra ngoài (bubbling)
-        if (event) {
-          event.stopPropagation();
-        }
+      function showDropdown(button) {
+        var dropdowns = document.querySelectorAll(".w3-dropdown-content");
+        dropdowns.forEach(function (dropdown) {
+          if (dropdown !== button.nextElementSibling) {
+            dropdown.classList.remove("w3-show");
+          }
+        });
 
-        // Lấy phần tử dropdown cần bật/tắt
-        var dropdown = document.getElementById(id);
-
-        // Bật/tắt class "w3-show" để hiển thị hoặc ẩn dropdown
-        if (dropdown.classList.contains("w3-show")) {
-          dropdown.classList.remove("w3-show");
+        var content = button.nextElementSibling;
+        if (content.classList.contains("w3-show")) {
+          content.classList.remove("w3-show");
         } else {
-          dropdown.classList.add("w3-show");
+          content.classList.add("w3-show");
         }
       }
+
+      window.onclick = function (event) {
+        if (!event.target.matches(".w3-button")) {
+          var dropdowns = document.querySelectorAll(".w3-dropdown-content");
+          dropdowns.forEach(function (dropdown) {
+            dropdown.classList.remove("w3-show");
+          });
+        }
+      };
     </script>
   </body>
 </html>

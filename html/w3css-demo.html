@@ -1,44 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>W3.CSS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
-    <title>Document</title>
+    <style>
+      .w3-dropdown-click .w3-dropdown-content {
+        display: none;
+      }
+      .w3-dropdown-click .w3-show {
+        display: block;
+      }
+    </style>
   </head>
   <body>
-    <!-- Header -->
-    <div class="w3-container w3-blue">
-      <h1>Header</h1>
+    <div class="w3-container">
+      <h2>Clickable Dropdown</h2>
+      <p>Click on the button to open the dropdown menu.</p>
+      <div class="w3-dropdown-click">
+        <button onclick="myFunction(this)" class="w3-button w3-black">
+          Click Me!
+        </button>
+        <div class="w3-dropdown-content w3-bar-block w3-border">
+          <a href="#" class="w3-bar-item w3-button">Link 1</a>
+          <a href="#" class="w3-bar-item w3-button">Link 2</a>
+          <a href="#" class="w3-bar-item w3-button">Link 3</a>
+        </div>
+      </div>
     </div>
-
-    <!-- Sidebar và Main Content -->
-    <div class="w3-row">
-      <!-- Sidebar -->
-      <!-- <div class="w3-col s12 m3 l2 w3-light-grey w3-sidebar w3-collapse">
-        <p>Sidebar</p>
-      </div> -->
-
-      <!-- Main Content -->
-      <div class="w3-col s12 m12 l12 w3-main">
-        <h2>Main Content</h2>
-        <div class="w3-row">
-          <div class="w3-col s12 m2 l4 w3-green">
-            <p>Cột 1</p>
-          </div>
-          <div class="w3-col s12 m2 l4 w3-blue">
-            <p>Cột 2</p>
-          </div>
-          <div class="w3-col s12 m2 l4 w3-red">
-            <p>Cột 3</p>
-          </div>
+    <div class="w3-container">
+      <h2>Clickable Dropdown</h2>
+      <p>Click on the button to open the dropdown menu.</p>
+      <div class="w3-dropdown-click">
+        <button onclick="myFunction(this)" class="w3-button w3-black">
+          Click Me!
+        </button>
+        <div class="w3-dropdown-content w3-bar-block w3-border">
+          <a href="#" class="w3-bar-item w3-button">Link 1</a>
+          <a href="#" class="w3-bar-item w3-button">Link 2</a>
+          <a href="#" class="w3-bar-item w3-button">Link 3</a>
+        </div>
+      </div>
+    </div>
+    <div class="w3-container">
+      <h2>Clickable Dropdown</h2>
+      <p>Click on the button to open the dropdown menu.</p>
+      <div class="w3-dropdown-click">
+        <button onclick="myFunction(this)" class="w3-button w3-black">
+          Click Me!
+        </button>
+        <div class="w3-dropdown-content w3-bar-block w3-border">
+          <a href="#" class="w3-bar-item w3-button">Link 1</a>
+          <a href="#" class="w3-bar-item w3-button">Link 2</a>
+          <a href="#" class="w3-bar-item w3-button">Link 3</a>
         </div>
       </div>
     </div>
 
-    <!-- Footer -->
-    <div class="w3-container w3-blue w3-center">
-      <p>Footer</p>
-    </div>
+    <script>
+      function myFunction(button) {
+        var dropdowns = document.querySelectorAll(".w3-dropdown-content");
+        dropdowns.forEach(function (dropdown) {
+          if (dropdown !== button.nextElementSibling) {
+            dropdown.classList.remove("w3-show");
+          }
+        });
+
+        var content = button.nextElementSibling;
+        if (content.classList.contains("w3-show")) {
+          content.classList.remove("w3-show");
+        } else {
+          content.classList.add("w3-show");
+        }
+      }
+
+      window.onclick = function (event) {
+        if (!event.target.matches(".w3-button")) {
+          var dropdowns = document.querySelectorAll(".w3-dropdown-content");
+          dropdowns.forEach(function (dropdown) {
+            dropdown.classList.remove("w3-show");
+          });
+        }
+      };
+    </script>
   </body>
 </html>
